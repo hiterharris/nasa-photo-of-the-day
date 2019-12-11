@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/nasa-logo.svg';
 import '../App.css';
 
-function Nav() {
+export default function Nav() {
   return (
     <div className='Nav nav-menu'>
         <img className="logo" alt='Nasa Logo' src={logo} />
@@ -13,5 +13,3 @@ function Nav() {
     </div>
   );
 }
-
-export default Nav;

@@ -2,15 +2,15 @@
 
 .App {
     background-image: url('./images/background.jpg');
-    // height: 5000px;
     padding-bottom: 10%;
-  }
+}
   
-  .Nav {
+.Nav {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 2% 0%;
+
     h1 {
         font-weight: 400;
         padding: 0% 4%;
@@ -20,7 +20,7 @@
         text-decoration: none;
         color: white;
     }
-  }
+}
   
 .Card {
     width: 80%;
@@ -60,11 +60,4 @@
         font-size: 24px;
         margin: 5%;
     }
-}
-
-.dropdown {
-    margin: auto;
-    // margin: 5%;
-    background: rgba(216.0, 216.0, 216.0, 0.25);
-    width: 30%;
 }

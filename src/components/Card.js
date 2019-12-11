@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import '../App.css';
 
-function Card() {
+export default function Card() {
     const [photo, setPhoto] = useState([]);
 
     useEffect( () => {
@@ -15,8 +15,6 @@ function Card() {
             })
     }, []);
 
-    console.log(photo);
-
     return (
         <div className='Card'>
             <div className='card-title'>Photo of the Day</div>
@@ -28,5 +26,3 @@ function Card() {
         </div>
     );
 }
-
-export default Card;
