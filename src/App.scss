@@ -16,6 +16,11 @@
         padding: 0% 4%;
         border-right: 1px solid white;
     }
+
+    h1:nth-child(5) {
+        border-right: none;
+    }
+
     a {
         text-decoration: none;
         color: white;
@@ -23,7 +28,7 @@
 }
   
 .Card {
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: center;
     border: 1px solid lightgrey;
@@ -34,7 +39,7 @@
         color: white;
         font-family: 'Lato', 'Sans Serif';
         font-size: 72px;
-        margin-top: 2%;
+        margin: 5%;
     }
 
     .photo-date {
@@ -45,13 +50,13 @@
 
     .photo {
         width: 70%;
-        margin: 5%;
     }
 
     .photo-title {
         color: white;
         font-family: 'Lato', 'Sans Serif';
         font-size: 36px;
+        margin: 5%;
     }
 
     .photo-explaination {

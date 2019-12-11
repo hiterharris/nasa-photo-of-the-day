@@ -18,11 +18,9 @@ export default function Card() {
     return (
         <div className='Card'>
             <div className='card-title'>Photo of the Day</div>
-            <div className='photo-date'>{photo.date}</div>
             <img className='photo' alt='' src={photo.hdurl} />
             <div className='photo-title'>{photo.title}</div>
             <div className='photo-explaination'>{photo.explanation}</div>
-
         </div>
     );
 }
