@@ -2,7 +2,8 @@
 
 .App {
     background-image: url('./images/background.jpg');
-    height: 100vh;
+    // height: 5000px;
+    padding-bottom: 10%;
   }
   
   .Nav {
@@ -21,4 +22,41 @@
     }
   }
   
+.Card {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background: rgba(216.0, 216.0, 216.0, 0.25);
 
+    .card-title {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 72px;    
+    }
+
+    .photo-date {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 18px;
+    }
+
+    .photo {
+        width: 70%;
+        margin: 5%;
+    }
+
+    .photo-title {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 36px;
+    }
+
+    .photo-explaination {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 24px;
+        margin: 5%;
+    }
+}

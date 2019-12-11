@@ -5,11 +5,11 @@ import '../App.css';
 function Nav() {
   return (
     <div className='Nav nav-menu'>
-        <img className="logo" src={logo} />
-        <h1><a href='https://www.nasa.gov/' target='_blank'>Home</a></h1>
-        <h1><a href='https://www.nasa.gov/about/index.html' target='_blank'>About</a></h1>
-        <h1><a href='https://www.nasa.gov/multimedia/imagegallery/iotd.html' target='_blank'>Gallery</a></h1>
-        <h1><a href='https://www.nasa.gov/multimedia/nasatv/index.html#public' target='_blank'>NASA TV</a></h1>
+        <img className="logo" alt='Nasa Logo' src={logo} />
+        <h1><a href='https://www.nasa.gov/' target='_blank' rel="noopener noreferrer">Home</a></h1>
+        <h1><a href='https://www.nasa.gov/about/index.html' target='_blank' rel="noopener noreferrer">About</a></h1>
+        <h1><a href='https://www.nasa.gov/multimedia/imagegallery/iotd.html' target='_blank' rel="noopener noreferrer">Gallery</a></h1>
+        <h1><a href='https://www.nasa.gov/multimedia/nasatv/index.html#public' target='_blank' rel="noopener noreferrer">NASA TV</a></h1>
     </div>
   );
 }

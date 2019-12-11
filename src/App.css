@@ -1,6 +1,6 @@
 .App {
   background-image: url("./images/background.jpg");
-  height: 100vh;
+  padding-bottom: 10%;
 }
 
 .Nav {
@@ -17,6 +17,40 @@
 .Nav a {
   text-decoration: none;
   color: white;
+}
+
+.Card {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background: rgba(216, 216, 216, 0.25);
+}
+.Card .card-title {
+  color: white;
+  font-family: "Lato", "Sans Serif";
+  font-size: 72px;
+}
+.Card .photo-date {
+  color: white;
+  font-family: "Lato", "Sans Serif";
+  font-size: 18px;
+}
+.Card .photo {
+  width: 70%;
+  margin: 5%;
+}
+.Card .photo-title {
+  color: white;
+  font-family: "Lato", "Sans Serif";
+  font-size: 36px;
+}
+.Card .photo-explaination {
+  color: white;
+  font-family: "Lato", "Sans Serif";
+  font-size: 24px;
+  margin: 5%;
 }
 
 /*# sourceMappingURL=App.css.map */
