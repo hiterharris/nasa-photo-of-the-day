@@ -1,0 +1,24 @@
+// Run Sass: sass --watch ./src/App.scss ./src/App.css
+
+.App {
+    background-image: url('./images/background.jpg');
+    height: 100vh;
+  }
+  
+  .Nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 0%;
+    h1 {
+        font-weight: 400;
+        padding: 0% 4%;
+        border-right: 1px solid white;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+  }
+  
+
