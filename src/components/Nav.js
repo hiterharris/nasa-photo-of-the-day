@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function Nav() {
   return (
-    <div className='Nav nav-menu'>
+    <div className='nav nav-menu'>
         <img className="logo" alt='Nasa Logo' src={logo} />
         <h1><a href='https://www.nasa.gov/' target='_blank' rel="noopener noreferrer">Home</a></h1>
         <h1><a href='https://www.nasa.gov/about/index.html' target='_blank' rel="noopener noreferrer">About</a></h1>

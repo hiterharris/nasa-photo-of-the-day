@@ -1,8 +1,17 @@
 import React, {useState, useEffect} from 'react';
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from 'reactstrap';
 import axios from 'axios';
 import '../App.css';
 
-export default function Card() {
+const Example = () => {
     const [photo, setPhoto] = useState([]);
 
     useEffect( () => {
@@ -14,13 +23,19 @@ export default function Card() {
                 console.log('Data Not Returned', error)
             })
     }, []);
+    
+  return (
+    <div>
+      <Card className="card">
+        <CardTitle className='card-title'>Photo of the Day</CardTitle>
+        <CardImg className="photo" src={photo.hdurl} alt="Card Image" />
+        <CardBody>
+            <CardSubtitle className='photo-title'>{photo.title}</CardSubtitle>
+            <CardText className='photo-explaination'>{photo.explanation}</CardText>
+        </CardBody>
+      </Card>
+    </div>
+  );
+};
 
-    return (
-        <div className='Card'>
-            <div className='card-title'>Photo of the Day</div>
-            <img className='photo' alt='' src={photo.hdurl} />
-            <div className='photo-title'>{photo.title}</div>
-            <div className='photo-explaination'>{photo.explanation}</div>
-        </div>
-    );
-}
+export default Example;

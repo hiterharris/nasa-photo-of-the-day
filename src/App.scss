@@ -1,11 +1,11 @@
 // Run Sass: sass --watch ./src/App.scss ./src/App.css
 
-.App {
+.app {
     background-image: url('./images/background.jpg');
     padding-bottom: 10%;
 }
   
-.Nav {
+.nav {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -27,7 +27,7 @@
     }
 }
   
-.Card {
+.card {
     width: 50%;
     margin: auto;
     text-align: center;
@@ -39,30 +39,28 @@
         color: white;
         font-family: 'Lato', 'Sans Serif';
         font-size: 72px;
-        margin: 5%;
     }
 
     .photo-date {
-        color: white;
+        color: rgb(109, 51, 51);
         font-family: 'Lato', 'Sans Serif';
         font-size: 18px;
     }
 
     .photo {
-        width: 70%;
+        padding: 5%;
     }
 
     .photo-title {
         color: white;
         font-family: 'Lato', 'Sans Serif';
         font-size: 36px;
-        margin: 5%;
     }
 
     .photo-explaination {
         color: white;
         font-family: 'Lato', 'Sans Serif';
-        font-size: 24px;
-        margin: 5%;
+        font-size: 20px;
+        margin: 2%;
     }
 }

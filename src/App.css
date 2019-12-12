@@ -1,28 +1,28 @@
-.App {
+.app {
   background-image: url("./images/background.jpg");
   padding-bottom: 10%;
 }
 
-.Nav {
+.nav {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 2% 0%;
 }
-.Nav h1 {
+.nav h1 {
   font-weight: 400;
   padding: 0% 4%;
   border-right: 1px solid white;
 }
-.Nav h1:nth-child(5) {
+.nav h1:nth-child(5) {
   border-right: none;
 }
-.Nav a {
+.nav a {
   text-decoration: none;
   color: white;
 }
 
-.Card {
+.card {
   width: 50%;
   margin: auto;
   text-align: center;
@@ -30,31 +30,29 @@
   border-radius: 10px;
   background: rgba(216, 216, 216, 0.25);
 }
-.Card .card-title {
+.card .card-title {
   color: white;
   font-family: "Lato", "Sans Serif";
   font-size: 72px;
-  margin: 5%;
 }
-.Card .photo-date {
-  color: white;
+.card .photo-date {
+  color: #6d3333;
   font-family: "Lato", "Sans Serif";
   font-size: 18px;
 }
-.Card .photo {
-  width: 70%;
+.card .photo {
+  padding: 5%;
 }
-.Card .photo-title {
+.card .photo-title {
   color: white;
   font-family: "Lato", "Sans Serif";
   font-size: 36px;
-  margin: 5%;
 }
-.Card .photo-explaination {
+.card .photo-explaination {
   color: white;
   font-family: "Lato", "Sans Serif";
-  font-size: 24px;
-  margin: 5%;
+  font-size: 20px;
+  margin: 2%;
 }
 
 /*# sourceMappingURL=App.css.map */
