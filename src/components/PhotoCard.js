@@ -6,12 +6,12 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  Button
 } from 'reactstrap';
+import PreviousDates from './PreviousDates';
 import axios from 'axios';
 import '../App.css';
 
-const Example = () => {
+const PhotoCard = () => {
     const [photo, setPhoto] = useState([]);
 
     useEffect( () => {
@@ -28,6 +28,10 @@ const Example = () => {
     <div>
       <Card className="card">
         <CardTitle className='card-title'>Photo of the Day</CardTitle>
+        <div className='dates'>
+          <div className='photo-date'>{photo.date}</div>
+          <PreviousDates />
+        </div>
         <CardImg className="photo" src={photo.hdurl} alt="Card Image" />
         <CardBody>
             <CardSubtitle className='photo-title'>{photo.title}</CardSubtitle>
@@ -38,4 +42,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default PhotoCard;

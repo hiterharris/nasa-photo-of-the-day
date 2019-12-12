@@ -41,10 +41,14 @@
         font-size: 72px;
     }
 
-    .photo-date {
-        color: rgb(109, 51, 51);
-        font-family: 'Lato', 'Sans Serif';
-        font-size: 18px;
+    .dates {
+        display: flex;
+        justify-content: center;
+        .photo-date {
+            color: white;
+            font-family: 'Lato', 'Sans Serif';
+            font-size: 18px;
+        }
     }
 
     .photo {

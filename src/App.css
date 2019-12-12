@@ -35,8 +35,12 @@
   font-family: "Lato", "Sans Serif";
   font-size: 72px;
 }
-.card .photo-date {
-  color: #6d3333;
+.card .dates {
+  display: flex;
+  justify-content: center;
+}
+.card .dates .photo-date {
+  color: white;
   font-family: "Lato", "Sans Serif";
   font-size: 18px;
 }
