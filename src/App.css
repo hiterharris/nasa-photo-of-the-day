@@ -11,7 +11,7 @@
 }
 .nav h1 {
   font-weight: 400;
-  padding: 0% 4%;
+  padding: 1% 4%;
   border-right: 1px solid white;
 }
 .nav h1:nth-child(5) {
