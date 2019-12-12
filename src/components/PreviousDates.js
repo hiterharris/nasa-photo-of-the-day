@@ -7,8 +7,8 @@ const PreviousDates = () => {
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
   return (
-    <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-      <DropdownToggle caret>Dates</DropdownToggle>
+    <Dropdown className='dropdown' isOpen={dropdownOpen} toggle={toggle}>
+      <DropdownToggle caret>More</DropdownToggle>
       <DropdownMenu>
         <DropdownItem>2019-12-11</DropdownItem>
         <DropdownItem>2019-12-10</DropdownItem>

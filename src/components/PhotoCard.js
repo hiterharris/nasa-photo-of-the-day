@@ -30,7 +30,7 @@ const PhotoCard = () => {
         <CardTitle className='card-title'>Photo of the Day</CardTitle>
         <div className='dates'>
           <div className='photo-date'>{photo.date}</div>
-          <PreviousDates />
+          <div className='dropdown'><PreviousDates /></div>
         </div>
         <CardImg className="photo" src={photo.hdurl} alt="Card Image" />
         <CardBody>

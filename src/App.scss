@@ -44,11 +44,18 @@
     .dates {
         display: flex;
         justify-content: center;
+
         .photo-date {
             color: white;
             font-family: 'Lato', 'Sans Serif';
-            font-size: 18px;
+            font-size: 24px;
+            margin: 1%;
         }
+        
+        .dropdown {
+            margin: 1%;
+        }
+
     }
 
     .photo {

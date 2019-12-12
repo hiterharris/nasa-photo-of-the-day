@@ -42,7 +42,11 @@
 .card .dates .photo-date {
   color: white;
   font-family: "Lato", "Sans Serif";
-  font-size: 18px;
+  font-size: 24px;
+  margin: 1%;
+}
+.card .dates .dropdown {
+  margin: 1%;
 }
 .card .photo {
   padding: 5%;
