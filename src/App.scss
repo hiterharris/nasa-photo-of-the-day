@@ -55,7 +55,6 @@
             color: white;
             font-family: 'Lato', 'Sans Serif';
             font-size: 24px;
-            margin: 1%;
         }
         
         .dropdown {
@@ -80,4 +79,14 @@
         font-size: 20px;
         margin: 2%;
     }
+}
+
+.buttons {
+    background-color:#0BB5FF;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.25rem 1rem;
+    border: 2px solid palevioletblue;
+    broder-radius:3px;
 }

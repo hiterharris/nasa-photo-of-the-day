@@ -8,31 +8,39 @@ import {
   CardSubtitle,
 } from 'reactstrap';
 import PreviousDates from './PreviousDates';
+import Buttons from './Buttons';
 import axios from 'axios';
 import '../App.css';
 
-const PhotoCard = () => {
-    const [photo, setPhoto] = useState([]);
+const PhotoCard = (props) => {
 
-    useEffect( () => {
-        axios.get('https://api.nasa.gov/planetary/apod?api_key=d6VskTQApM8BQeNQ7m6Tm71eqdfqpvK2rXx03hKp')
-            .then(response => {
-                setPhoto(response.data);
-            })
-            .catch(error => {
-                console.log('Data Not Returned', error)
-            })
-    }, []);
+  const [photo, setPhoto] = useState([]);
+
+  const date = props.date;
+  const previousDate = props.previousDate;
+  const nextDate = props.nextDate;
+  const counter = props.counter;
+
+  useEffect( () => {
+      axios.get(`https://api.nasa.gov/planetary/apod?api_key=d6VskTQApM8BQeNQ7m6Tm71eqdfqpvK2rXx03hKp&date=${date}`)
+          .then(response => {
+              setPhoto(response.data);
+          })
+          .catch(error => {
+              console.log('Data Not Returned', error)
+          })
+  }, [date]);
+
+  console.log(date);
     
   return (
     <div>
       <Card className="card">
         <CardTitle className='card-title'>Photo of the Day</CardTitle>
         <div className='dates'>
-          <div className='photo-date'>{photo.date}</div>
-          <div className='dropdown'><PreviousDates /></div>
+          <Buttons date={date} previousDate={previousDate} nextDate={nextDate} />
         </div>
-        <CardImg className="photo" src={photo.hdurl} alt="Card Image" />
+        <CardImg className="photo" src={photo.url} alt="Card Image" />
         <CardBody>
             <CardSubtitle className='photo-title'>{photo.title}</CardSubtitle>
             <CardText className='photo-explaination'>{photo.explanation}</CardText>
