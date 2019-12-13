@@ -3,7 +3,7 @@ import './../App.css';
 
 
 
-function Buttons(props) {
+function PreviousPhotos(props) {
     const previousDate = props.previousDate;
     const nextDate = props.nextDate;
     
@@ -13,12 +13,12 @@ function Buttons(props) {
     }
 
     return (
-        <div>
+        <div className='dates'>
             <p className='photo-date'>{props.date}</p>
-            <button className='buttons' onClick={()=> previousDate()}>Previous</button>
+            <button className='buttons' onClick={()=> previousDate()}>Previous Photos</button>
             {button}
         </div>  
     )
 }
 
-export default Buttons;
+export default PreviousPhotos;

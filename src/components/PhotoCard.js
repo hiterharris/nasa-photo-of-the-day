@@ -7,19 +7,16 @@ import {
   CardTitle,
   CardSubtitle,
 } from 'reactstrap';
-import PreviousDates from './PreviousDates';
-import Buttons from './Buttons';
+import PreviousPhotos from './PreviousPhotos';
 import axios from 'axios';
 import '../App.css';
 
 const PhotoCard = (props) => {
-
-  const [photo, setPhoto] = useState([]);
-
   const date = props.date;
   const previousDate = props.previousDate;
   const nextDate = props.nextDate;
-  const counter = props.counter;
+
+  const [photo, setPhoto] = useState([]);
 
   useEffect( () => {
       axios.get(`https://api.nasa.gov/planetary/apod?api_key=d6VskTQApM8BQeNQ7m6Tm71eqdfqpvK2rXx03hKp&date=${date}`)
@@ -30,16 +27,12 @@ const PhotoCard = (props) => {
               console.log('Data Not Returned', error)
           })
   }, [date]);
-
-  console.log(date);
     
   return (
     <div>
       <Card className="card">
         <CardTitle className='card-title'>Photo of the Day</CardTitle>
-        <div className='dates'>
-          <Buttons date={date} previousDate={previousDate} nextDate={nextDate} />
-        </div>
+          <PreviousPhotos date={date} previousDate={previousDate} nextDate={nextDate} />
         <CardImg className="photo" src={photo.url} alt="Card Image" />
         <CardBody>
             <CardSubtitle className='photo-title'>{photo.title}</CardSubtitle>

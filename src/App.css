@@ -39,14 +39,10 @@
   font-family: "Lato", "Sans Serif";
   font-size: 72px;
 }
-.card .dates {
-  display: flex;
-  justify-content: center;
-}
 .card .dates .photo-date {
   color: white;
   font-family: "Lato", "Sans Serif";
-  font-size: 24px;
+  font-size: 32px;
 }
 .card .dates .dropdown {
   margin: 1%;
@@ -67,13 +63,13 @@
 }
 
 .buttons {
-  background-color: #0BB5FF;
+  background-color: #4267B2;
   color: white;
-  font-size: 1rem;
-  margin: 1rem;
-  padding: 0.25rem 1rem;
-  border: 2px solid palevioletblue;
-  broder-radius: 3px;
+  font-size: 16px;
+  border-radius: 10px;
+  height: 40px;
+  width: 150px;
+  border: none;
 }
 
 /*# sourceMappingURL=App.css.map */
