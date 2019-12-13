@@ -1,0 +1,89 @@
+// Run Sass: sass --watch ./src/App.scss ./src/App.css
+
+.app {
+    background-image: url('./images/background.jpg');
+    padding-bottom: 10%;
+}
+  
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0%;
+
+    .logo {
+        width: 10%;
+    }
+
+    h1 {
+        font-weight: 400;
+        padding: 1% 5%;
+        font-size: 32px;
+    }
+
+    h1:nth-child(5) {
+        border-right: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+  
+.card {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background: rgba(216.0, 216.0, 216.0, 0.25);
+
+    .card-title {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 72px;
+    }
+
+    .dates {
+
+        .photo-date {
+            color: white;
+            font-family: 'Lato', 'Sans Serif';
+            font-size: 32px;
+        }
+        
+        .dropdown {
+            margin: 1%;
+        }
+
+    }
+
+    .photo {
+        padding: 5%;
+    }
+
+    .photo-title {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 36px;
+    }
+
+    .photo-explaination {
+        color: white;
+        font-family: 'Lato', 'Sans Serif';
+        font-size: 20px;
+        margin: 2%;
+    }
+}
+
+.buttons {
+    background-color:#4267B2;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    border: none;
+}
